@@ -1,0 +1,63 @@
+
+.container{
+	width: 400px;
+	max-width: 90%;
+	position:fixed;
+	left:35%;
+	top:40%;
+	border-radius: .5rem;
+}
+
+.quote-input{
+	background-color:transparent;
+}
+
+#quoteDisplay {
+	color: white;
+}
+
+textarea{
+	
+	position:fixed;
+	left:35%;
+	top:53%;
+	resize:none;
+	width:400px;
+	height:150px;
+	border-radius: .5rem;
+}
+
+.quote-input:focus{
+	position:fixed;
+	left:35%;
+	top:53%;
+	resize:none;
+	width:400px;
+	height:150px;
+}
+
+.correct{
+	background-color:yellowgreen;
+}
+
+.incorrect{
+	color:red;
+	text-decoration:underline;
+}
+
+#time{
+	position: fixed;
+	left: 50%;
+	top: 20%;
+	font-weight:bold;
+}
+
+#score{
+	position:fixed;
+	left:50%;
+	top:30%;
+}
+
+
+
+

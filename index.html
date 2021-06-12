@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Projet fin d'année</title>
+		<meta charset="utf-16" />
+		<meta name="author" content="Hassan / Yun / Jordan" />
+		<meta name="description" content="épreuves..." />
+		
+		<link rel="stylesheet" href="./style/main.css" />
+		<link rel="stylesheet" href="./style/typing.css" />
+		<link rel="stylesheet" href="./style/countries.css" />
+		
+		
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
+	</head>
+	<body>
+		<div id="homepage">
+			<h1>Bienvenue!</h1>
+			<p>Choisis la difficulté</p>
+			<button type="button" onclick="startGame('easy')"><span><h3>Facile</h3></span></button>
+			<button type="button" onclick="startGame('normal')"><span><h3>Normal</h3></span></button>
+			<button type="button" onclick="startGame('hard')"><span><h3>Difficile</h3></span></button>
+		</div>
+		
+		
+		<div id="typing-game">
+			<div id="time">Temps restant<br>60s</div>
+			<div id="score">Score<br>0</div>
+			<div class="container">
+				<div class="quote-display" id="quoteDisplay"></div>
+				<textarea id="quoteInput" class="quote-input" autofocus></textarea>
+			</div>
+			
+		</div>
+		
+		<div id="countries-game">
+			<img id="countryFlag" src="" alt="flag">
+			<div id="centered_options">
+				<button id="option1" class="options" type="button" onclick="verify(this)"></button>
+				<button id="option2" class="options" type="button" onclick="verify(this)"></button>
+				<button id="option3" class="options" type="button" onclick="verify(this)"></button>
+				<button id="option4" class="options" type="button" onclick="verify(this)"></button>
+			</div>
+			<br>
+			<h1 id="result"></h1>
+		</div>
+		
+		
+		<div id="maths-game">
+			<h2 id="fonc"></h2>
+			<p id="enoncer"></p>
+			<label for="solution1">solution 1: </label>
+			<input type="text" id="solution1" name="solution1" style="background-color: transparent;"><br><br>
+			<label id="label_solution2" for="solution2">solution 2: </label>
+			<input type="text" id="solution2" name="solution2" style="background-color: transparent;"><br><br>
+			<div id="bouton"></div>
+			<div id="laFonction"></div>
+			<h1 id="resultMaths"></h1>
+		</div>
+		
+		
+		<div id="celebration">
+			<h1>GG!</h1>
+			<div class="firework" id="firework1">
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+			</div>
+			<div class="firework" id="firework2">
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+			</div>
+			<div class="firework" id="firework3">
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+				<div class="explosion"></div>
+			</div>
+		</div>
+		
+		
+		<script src="./js/main.js"></script>
+		<script src="./js/maths.js"></script>
+		<script src="./js/typing.js"></script>
+		<script src="./js/countries_list.js"></script>
+		<script src="./js/countries.js"></script>
+	</body>
+</html>
